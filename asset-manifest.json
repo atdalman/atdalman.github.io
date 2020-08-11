@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ypsilon14/static/css/main.9140f5ba.chunk.css",
+    "main.js": "/ypsilon14/static/js/main.14ae7efe.chunk.js",
+    "main.js.map": "/ypsilon14/static/js/main.14ae7efe.chunk.js.map",
+    "runtime-main.js": "/ypsilon14/static/js/runtime-main.bdff69a3.js",
+    "runtime-main.js.map": "/ypsilon14/static/js/runtime-main.bdff69a3.js.map",
+    "static/js/2.e3e25ecb.chunk.js": "/ypsilon14/static/js/2.e3e25ecb.chunk.js",
+    "static/js/2.e3e25ecb.chunk.js.map": "/ypsilon14/static/js/2.e3e25ecb.chunk.js.map",
+    "index.html": "/ypsilon14/index.html",
+    "precache-manifest.2d8c5da6bd739c280291438d9c48831f.js": "/ypsilon14/precache-manifest.2d8c5da6bd739c280291438d9c48831f.js",
+    "service-worker.js": "/ypsilon14/service-worker.js",
+    "static/css/main.9140f5ba.chunk.css.map": "/ypsilon14/static/css/main.9140f5ba.chunk.css.map",
+    "static/js/2.e3e25ecb.chunk.js.LICENSE.txt": "/ypsilon14/static/js/2.e3e25ecb.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/ypsilon14/static/media/vga.634410d4.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdff69a3.js",
+    "static/js/2.e3e25ecb.chunk.js",
+    "static/css/main.9140f5ba.chunk.css",
+    "static/js/main.14ae7efe.chunk.js"
+  ]
+}
