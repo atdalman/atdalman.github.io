@@ -1,0 +1,26 @@
+@import "../../assets/sass/progressbar";
+
+.__image__ {
+    .progressbar {
+        &::after {
+            content: "";
+            animation: loadingdots 1.5s ease-in infinite;
+        }
+    }
+
+    canvas {
+        max-width: 100%;
+    }
+
+    &.monochrome {
+        mix-blend-mode: luminosity;
+    }
+
+    &.luminosity {
+        mix-blend-mode: luminosity;
+    }
+
+    &.lighten {
+        mix-blend-mode: lighten;
+    }
+}

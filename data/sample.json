@@ -1,0 +1,160 @@
+{
+    "config": {
+        "name": "Sample JSON data",
+        "author": "@redhg"
+    },
+    "screens": [
+        {
+            "id": "screen0",
+            "type": "screen",
+            "content": [
+                "",
+                {
+                    "type": "link",
+                    "target": "screen0",
+                    "text": "> RELOAD"
+                },
+                {
+                    "type": "link",
+                    "target": "screen1",
+                    "text": "> NEXT"
+                },
+                {
+                    "type": "toggle",
+                    "states": [
+                        {
+                            "active": true,
+                            "text": "> This is the first record!"
+                        },
+                        {
+                            "active": false,
+                            "text": "> This is the second record!"
+                        },
+                        {
+                            "active": false,
+                            "text": "> This is the third record!"
+                        }
+                    ]
+                },
+                {
+                    "text": "> LOCKED LINK. Shift+click to unlock",
+                    "type": "link",
+                    "target": [
+                        {
+                            "target": "lockedDialog",
+                            "type": "dialog",
+                            "shiftKey": false
+                        },
+                        {
+                            "target": "menu",
+                            "type": "link",
+                            "shiftKey": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "screen1",
+            "type": "screen",
+            "content": [
+                "This is the first line of the content.",
+                {
+                    "type": "text",
+                    "text": "this is a text object",
+                    "className": "blahblahblah"
+                },
+                {
+                    "type": "link",
+                    "target": "screen2",
+                    "text": "> NEXT"
+                },
+                {
+                    "type": "link",
+                    "target": "screen0",
+                    "text": "> BACK"
+                },
+                {
+                    "type": "prompt",
+                    "prompt": "Enter command: ",
+                    "className": "cursor",
+                    "commands": [
+                        {
+                            "command": "next",
+                            "action": {
+                                "type": "link",
+                                "target": "screen2"
+                            }
+                        },
+                        {
+                            "command": "back",
+                            "action": {
+                                "type": "link",
+                                "target": "screen0"
+                            }
+                        },
+                        {
+                            "command": "console",
+                            "action": {
+                                "type": "console",
+                                "args": "whatever"
+                            }
+                        },
+                        {
+                            "command": "dialog1",
+                            "action": {
+                                "type": "dialog",
+                                "target": "dialog1"
+                            }
+                        },
+                        {
+                            "command": "dialog2",
+                            "action": {
+                                "type": "dialog",
+                                "target": "locked"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "screen2",
+            "type": "screen",
+            "content": [
+                "\n\n\nThis is the second screen. It starts with numerous line breaks.",
+                "This is a content block.\nIt can contain multiple paragraphs and line breaks.\n\n\nSee?",
+                "Lorem ipsum dolor sit amet, mel fabulas blandit an, nullam integre feugiat eum an. In inimicus volutpat eum, quo ea elaboraret neglegentur. In ius postea adipisci expetendis, iudico latine epicuri pro id. Ei oblique feugiat definiebas eam, ad sea option fierent, his cu tritani invidunt. Te est dicunt praesent, ei cum illud iudicabit.",
+                "\n",
+                "\n",
+                {
+                    "type": "link",
+                    "target": "screen1",
+                    "text": "> BACK"
+                }
+            ]
+        },
+        {
+            "id": "static",
+            "type": "static"
+        }
+    ],
+    "dialogs": [
+        {
+            "id": "dialog1",
+            "type": "alert",
+            "content": [
+                "this is the first line in the dialog.",
+                "And this is the second line.",
+                "Press <enter> to close."
+            ]
+        },
+        {
+            "id": "locked",
+            "type": "alert",
+            "content": [
+                "Error! Keycard required."
+            ]
+        }
+    ]
+}
